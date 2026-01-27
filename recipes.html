@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Kavoon&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/recipes.css">
+</head>
+
+<body>
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg coffee-navbar">
+    <div class="container">
+
+      <!-- LOGO -->
+      <a class="navbar-brand" href="./index.html">
+        <img src="./image/logo.png" class="coffee-logo" alt="Alessilabs Logo" />
+      </a>
+
+      <!-- TOGGLER -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#coffeeNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- MENU -->
+      <div class="collapse navbar-collapse" id="coffeeNav">
+        <ul class="navbar-nav mx-auto gap-lg-4 text-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./our-story.html">Our Story</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./recipes.html">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <!-- ICONS -->
+        <div class="nav-icons d-flex align-items-center justify-content-center gap-3">
+          <a href="./cart.html" class="icon-btn">
+            <i class="bi bi-cart3"></i>
+          </a>
+          <a href="./account.html" class="icon-btn">
+            <i class="bi bi-person"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+    <!-- ================= RECIPES HERO ================= -->
+    <section class="al-recipes-hero">
+        <!-- BACKGROUND IMAGE -->
+        <div class="al-recipes-bg">
+            <img src="./image/recipe-header.png" alt="Recipes" />
+        </div>
+
+        <!-- OVERLAY -->
+        <div class="al-recipes-overlay"></div>
+
+        <!-- CONTENT -->
+        <div class="al-recipes-content">
+            <h1>RECIPES</h1>
+            <p>Delicious coffee recipes crafted for every mood</p>
+        </div>
+
+        <!-- WAVE -->
+        <div class="al-recipes-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C240,120 480,120 720,90 960,60 1200,40 1440,60 L1440,120 L0,120 Z" fill="#faf7f2"></path>
+            </svg>
+        </div>
+    </section>
+
+
+<!-- ================= BLOG SECTION ================= -->
+<section class="coffee-blog">
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="coffee-blog-header">
+      <h2>Latest Blogs</h2>
+      <p>Tips, guides & insights curated by our experts</p>
+    </div>
+
+    <!-- BLOG GRID -->
+    <div class="coffee-blog-grid" id="blogGrid">
+
+      <!-- BLOG CARD -->
+      <article class="coffee-blog-card">
+        <div class="coffee-blog-img">
+          <img src="./image/Healthy.png" alt="">
+        </div>
+        <div class="coffee-blog-content">
+          <span class="coffee-blog-tag">Tips</span>
+          <h3>How to Maintain Your Sofa for Long Life</h3>
+          <p>Easy habits to keep your sofa clean, fresh and long-lasting.</p>
+          <a href="#" class="coffee-blog-btn">Read More</a>
+        </div>
+      </article>
+
+      <article class="coffee-blog-card">
+        <div class="coffee-blog-img">
+          <img src="./image/Healthy.png" alt="">
+        </div>
+        <div class="coffee-blog-content">
+          <span class="coffee-blog-tag">Guide</span>
+          <h3>Fabric vs Leather Sofa – What to Choose?</h3>
+          <p>A practical comparison to help you choose the right sofa.</p>
+          <a href="#" class="coffee-blog-btn">Read More</a>
+        </div>
+      </article>
+
+      <article class="coffee-blog-card">
+        <div class="coffee-blog-img">
+          <img src="./image/Healthy.png" alt="">
+        </div>
+        <div class="coffee-blog-content">
+          <span class="coffee-blog-tag">Repair</span>
+          <h3>Repair or Replace? Make the Right Decision</h3>
+          <p>Know when repairing your sofa makes more sense than buying new.</p>
+          <a href="#" class="coffee-blog-btn">Read More</a>
+        </div>
+      </article>
+
+      <!-- HIDDEN BLOGS -->
+      <article class="coffee-blog-card hidden-blog">
+        <div class="coffee-blog-img">
+          <img src="./image/Healthy.png" alt="">
+        </div>
+        <div class="coffee-blog-content">
+          <span class="coffee-blog-tag">Care</span>
+          <h3>Best Cleaning Products for Sofa Care</h3>
+          <p>Recommended cleaning products that are safe for your sofa.</p>
+          <a href="#" class="coffee-blog-btn">Read More</a>
+        </div>
+      </article>
+
+      <article class="coffee-blog-card hidden-blog">
+        <div class="coffee-blog-img">
+          <img src="./image/Healthy.png" alt="">
+        </div>
+        <div class="coffee-blog-content">
+          <span class="coffee-blog-tag">Design</span>
+          <h3>Modern Sofa Designs for Indian Homes</h3>
+          <p>Trending sofa styles that elevate your living space.</p>
+          <a href="#" class="coffee-blog-btn">Read More</a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- LOAD MORE -->
+    <div class="coffee-blog-load">
+      <button id="loadMoreBlogs">Load More</button>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="coffee-footer">
+    <!-- Main Footer -->
+    <div class="footer-main">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Logo & Text -->
+          <div class="col-lg-4">
+            <div class="footer-brand">
+              <img src="./image/logo.png" alt="" />
+              <p>
+                A modern coffeehouse where creativity and craft come together.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2">
+            <h5>Quick Links</h5>
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Gallery</li>
+              <li>Stories / Impact</li>
+              <li>Our Lab</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+
+          <!-- Our Menu -->
+          <div class="col-lg-3">
+            <h5>Our Menu</h5>
+            <ul>
+              <li>Americano Rosted Coffee</li>
+              <li>Italian Rosted Coffee</li>
+              <li>Brazilan Rosted Coffee</li>
+              <li>Mericano Cold Coffee</li>
+              <li>Mericano Cold Coffee</li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-3">
+            <h5>Contact Information</h5>
+            <ul class="contact-list">
+              <li><i class="bi bi-geo-alt-fill"></i> Malibu,USA</li>
+              <li><i class="bi bi-envelope-fill"></i> malibu@gmail.com</li>
+              <li><i class="bi bi-telephone-fill"></i> +123456789</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">© 2026 Alessis Lab. All rights reserved.</div>
+  </footer>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+  const loadBtn = document.getElementById("loadMoreBlogs");
+  const hiddenBlogs = document.querySelectorAll(".hidden-blog");
+
+  let current = 0;
+  const step = 2;
+
+  loadBtn.addEventListener("click", () => {
+    for (let i = current; i < current + step; i++) {
+      if (hiddenBlogs[i]) {
+        hiddenBlogs[i].style.display = "block";
+      }
+    }
+    current += step;
+
+    if (current >= hiddenBlogs.length) {
+      loadBtn.style.display = "none";
+    }
+  });
+</script>
+
+</body>
+
+</html>

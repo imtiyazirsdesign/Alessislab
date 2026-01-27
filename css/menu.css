@@ -1,0 +1,346 @@
+/* =========================
+   MENU HERO SECTION
+========================= */
+
+.menu-hero {
+  position: relative;
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  background: url("../image/menu-header-bg.png") center / cover no-repeat;
+  font-family: "Inter", sans-serif;
+}
+
+/* Brand overlay */
+.menu-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(11, 61, 51, 0.85),  /* brand deep green */
+    rgba(11, 61, 51, 0.55)
+  );
+}
+
+/* Badge */
+.menu-hero-badge {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 7px 18px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  background: rgba(217, 243, 235, 0.18); /* mint glass */
+  color: #e9f7f3;
+  backdrop-filter: blur(8px);
+}
+
+/* Title */
+.menu-hero-title {
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+/* Subtitle */
+.menu-hero-subtitle {
+  font-size: 1.05rem;
+  font-weight: 400;
+  max-width: 520px;
+  margin: 0 auto;
+  color: #cfeee7;
+  opacity: 0.95;
+}
+
+/* Mobile Optimization */
+@media (max-width: 576px) {
+  .menu-hero {
+    min-height: 40vh;
+  }
+
+  .menu-hero-title {
+    font-size: 2rem;
+  }
+
+  .menu-hero-subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+/* ===============================
+   POPULAR MENU – ALESSILABS THEME
+================================ */
+.al-popular-menu-section {
+  position: relative;
+  padding: 100px 0;
+  background: #f3fbf8; /* light mint background */
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+/* BACKGROUND SHAPES */
+.menu-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.22;
+  z-index: 0;
+}
+
+.shape-1 {
+  width: 320px;
+  height: 320px;
+  background: #14a98b; /* mint accent */
+  top: -150px;
+  left: -150px;
+}
+
+.shape-2 {
+  width: 300px;
+  height: 300px;
+  background: #0b3d33; /* brand green */
+  bottom: -150px;
+  right: -150px;
+}
+
+/* HEADER */
+.al-popular-menu-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 60px;
+  z-index: 1;
+}
+
+.menu-subtitle {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #14a98b;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.al-popular-menu-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #0b3d33;
+}
+
+/* CARD */
+.al-popular-menu-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 26px 28px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #cfe9e2;
+  box-shadow: 0 12px 32px rgba(11, 61, 51, 0.08);
+  transition: all 0.35s ease;
+}
+
+.al-popular-menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px rgba(11, 61, 51, 0.14);
+}
+
+/* IMAGE */
+.al-popular-menu-card img {
+  width: 70px;
+  flex-shrink: 0;
+}
+
+/* CONTENT */
+.al-popular-menu-content h5 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #0b3d33;
+}
+
+.al-popular-menu-content p {
+  font-size: 14px;
+  color: #4f6f68;
+  margin: 0;
+  max-width: 380px;
+}
+
+/* PRICE */
+.al-popular-menu-price {
+  text-align: right;
+  margin-left: auto;
+}
+
+.al-popular-menu-price .new {
+  font-size: 20px;
+  font-weight: 700;
+  color: #14a98b;
+  display: block;
+}
+
+.al-popular-menu-price .old {
+  font-size: 14px;
+  color: #9bbdb5;
+  text-decoration: line-through;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .al-popular-menu-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .al-popular-menu-price {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
+
+
+
+/* ===============================
+   EXPLORE MENU SECTION – ALESSILABS
+================================ */
+.al-explore-menu-section {
+  padding: 100px 0;
+  background: linear-gradient(
+    180deg,
+    #f3fbf8,
+    #eaf6f2
+  );
+  color: #0b3d33;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+
+/* HEADER */
+.al-explore-menu-header span {
+  font-size: 14px;
+  color: #14a98b;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.al-explore-menu-header h2 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-top: 6px;
+  margin-bottom: 60px;
+  color: #0b3d33;
+}
+
+/* ===============================
+   MENU ITEM
+================================ */
+.al-explore-menu-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cfe9e2;
+  padding: 26px 30px;
+  margin-bottom: 26px;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(11, 61, 51, 0.06);
+  transition: all 0.35s ease;
+}
+
+.al-explore-menu-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(11, 61, 51, 0.12);
+}
+
+/* IMAGE */
+.al-explore-menu-item img {
+  width: 70px;
+  flex-shrink: 0;
+}
+
+/* INFO */
+.al-explore-menu-info {
+  flex: 1;
+}
+
+.al-explore-menu-info h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #0b3d33;
+}
+
+.al-explore-menu-info p {
+  font-size: 14px;
+  color: #4f6f68;
+  margin: 0;
+  max-width: 420px;
+}
+
+/* PRICE */
+.al-explore-menu-price {
+  border-left: 1px solid #cfe9e2;
+  padding-left: 22px;
+  min-width: 120px;
+  text-align: right;
+}
+
+.al-explore-menu-price .new {
+  font-size: 20px;
+  font-weight: 700;
+  color: #14a98b;
+  display: block;
+}
+
+.al-explore-menu-price .old {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #9bbdb5;
+}
+
+/* ===============================
+   PROMO CARD
+================================ */
+.al-explore-menu-promo {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid #cfe9e2;
+  background: #ffffff;
+  box-shadow: 0 20px 45px rgba(11, 61, 51, 0.12);
+}
+
+.al-explore-menu-promo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .al-explore-menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .al-explore-menu-price {
+    border-left: none;
+    padding-left: 0;
+    text-align: left;
+    margin-top: 10px;
+  }
+}
+
+
+

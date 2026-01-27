@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/menu.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg coffee-navbar">
+    <div class="container">
+
+      <!-- LOGO -->
+      <a class="navbar-brand" href="./index.html">
+        <img src="./image/logo.png" class="coffee-logo" alt="Alessilabs Logo" />
+      </a>
+
+      <!-- TOGGLER -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#coffeeNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- MENU -->
+      <div class="collapse navbar-collapse" id="coffeeNav">
+        <ul class="navbar-nav mx-auto gap-lg-4 text-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./our-story.html">Our Story</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./recipes.html">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <!-- ICONS -->
+        <div class="nav-icons d-flex align-items-center justify-content-center gap-3">
+          <a href="./cart.html" class="icon-btn">
+            <i class="bi bi-cart3"></i>
+          </a>
+          <a href="./account.html" class="icon-btn">
+            <i class="bi bi-person"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <!-- MENU HERO SECTION -->
+  <section class="menu-hero">
+    <div class="menu-hero-overlay"></div>
+
+    <div class="container position-relative">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center text-white">
+          <!-- Badge -->
+          <span class="menu-hero-badge"> ☕ Our Selection </span>
+
+          <!-- Title -->
+          <h1 class="menu-hero-title">Our Menu</h1>
+
+          <!-- Subtitle -->
+          <p class="menu-hero-subtitle">
+            Crafted with science, served with soul
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POPULAR MENU -->
+  <section class="al-popular-menu-section">
+    <div class="menu-shape shape-1"></div>
+    <div class="menu-shape shape-2"></div>
+
+    <div class="container">
+      <div class="al-popular-menu-header">
+        <span class="menu-subtitle">Handpicked</span>
+        <h2>Our Popular Picks</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- LEFT -->
+        <div class="col-lg-6">
+          <div class="al-popular-menu-card">
+            <img src="./image/menu/classic-americano.png" alt="" />
+            <div class="al-popular-menu-content">
+              <h5>Classic Americano</h5>
+              <p>
+                Smooth espresso diluted with hot water for a bold yet balanced
+                taste.
+              </p>
+            </div>
+            <div class="al-popular-menu-price">
+              <span class="new">$18.99</span>
+              <span class="old">$24.00</span>
+            </div>
+          </div>
+
+          <div class="al-popular-menu-card">
+            <img src="./image/menu/vanilla-latte.png" alt="" />
+            <div class="al-popular-menu-content">
+              <h5>Vanilla Latte</h5>
+              <p>
+                Rich espresso blended with steamed milk and natural vanilla
+                syrup.
+              </p>
+            </div>
+            <div class="al-popular-menu-price">
+              <span class="new">$21.99</span>
+            </div>
+          </div>
+
+          <div class="al-popular-menu-card">
+            <img src="./image/menu/caramel-cappuccino.png" alt="" />
+            <div class="al-popular-menu-content">
+              <h5>Caramel Cappuccino</h5>
+              <p>
+                Perfect foam with caramel sweetness and a deep coffee finish.
+              </p>
+            </div>
+            <div class="al-popular-menu-price">
+              <span class="new">$20.99</span>
+            </div>
+          </div>
+
+          <div class="al-popular-menu-card">
+            <img src="./image/menu/brazilian-dark-roast-beans.webp" alt="" />
+            <div class="al-popular-menu-content">
+              <h5>Brazilian Dark Roast Beans</h5>
+              <p>
+                Strong aroma with chocolate undertones sourced from Brazil.
+              </p>
+            </div>
+            <div class="al-popular-menu-price">
+              <span class="new">$39.99</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="col-lg-6">
+          <div class="al-popular-menu-card">
+            <img src="./image/menu/espresso-shot.png" alt="" />
+            <div class="al-popular-menu-content">
+              <h5>Espresso Shot</h5>
+              <p>Intense single-shot espresso brewed to perfection.</p>
+            </div>
+            <div class="al-popular-menu-price">
+              <span class="new">$14.99</span>
+            </div>
+          </div>
+
+          <div class="al-popular-menu-card">
+            <img src="./image/menu/mocha-delight.png" alt="" />
+            <div class="al-popular-menu-content">
+              <h5>Mocha Delight</h5>
+              <p>Espresso meets cocoa with a creamy milk base.</p>
+            </div>
+            <div class="al-popular-menu-price">
+              <span class="new">$23.99</span>
+            </div>
+          </div>
+
+          <div class="al-popular-menu-card">
+            <img src="./image/menu/italian-espresso-roast.png" alt="" />
+            <div class="al-popular-menu-content">
+              <h5>Italian Espresso Roast</h5>
+              <p>Traditional Italian roast with a bold, smoky finish.</p>
+            </div>
+            <div class="al-popular-menu-price">
+              <span class="new">$19.99</span>
+            </div>
+          </div>
+
+          <div class="al-popular-menu-card">
+            <img src="./image/menu/south-indian-filter-coffee.jpg" alt="" />
+            <div class="al-popular-menu-content">
+              <h5>South Indian Filter Coffee</h5>
+              <p>
+                Authentic blend with chicory, rich aroma, and smooth body.
+              </p>
+            </div>
+            <div class="al-popular-menu-price">
+              <span class="new">$17.99</span>
+              <span class="old">$22.50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- explore-menu-section -->
+  <section class="al-explore-menu-section">
+    <div class="container">
+      <!-- HEADER -->
+      <div class="al-explore-menu-header text-center">
+        <span>What Happens Here</span>
+        <h2>EXPLORE OUR MENU.</h2>
+      </div>
+
+      <div class="row align-items-start g-4">
+        <!-- LEFT MENU LIST -->
+        <div class="col-lg-8">
+          <div class="al-explore-menu-item">
+            <img src="./image/menu/bmericano-rosted-coffee.webp" alt="" />
+            <div class="al-explore-menu-info">
+              <h5>Bmericano Rosted Coffee</h5>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable.
+              </p>
+            </div>
+            <div class="al-explore-menu-price">
+              <span class="new">$19.99</span>
+              <span class="old">$30.00</span>
+            </div>
+          </div>
+
+          <div class="al-explore-menu-item">
+            <img src="./image/menu/AmericanoRostedCoffee.png" alt="" />
+            <div class="al-explore-menu-info">
+              <h5>Americano Rosted Coffee</h5>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable.
+              </p>
+            </div>
+            <div class="al-explore-menu-price">
+              <span class="new">$19.99</span>
+            </div>
+          </div>
+
+          <div class="al-explore-menu-item">
+            <img src="./image/menu/maxican-rosted-coffee.jpg" alt="" />
+            <div class="al-explore-menu-info">
+              <h5>Maxican Rosted Coffee</h5>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable.
+              </p>
+            </div>
+            <div class="al-explore-menu-price">
+              <span class="new">$19.99</span>
+            </div>
+          </div>
+
+          <div class="al-explore-menu-item">
+            <img src="./image/menu/xmericano-rosted-coffee.png" alt="" />
+            <div class="al-explore-menu-info">
+              <h5>Xmericano Tosted Coffee</h5>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable.
+              </p>
+            </div>
+            <div class="al-explore-menu-price">
+              <span class="new">$15.99</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT PROMO CARD -->
+        <div class="col-lg-4">
+          <div class="al-explore-menu-promo">
+            <img src="./image/menu/menu-right-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="coffee-footer">
+    <!-- Main Footer -->
+    <div class="footer-main">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Logo & Text -->
+          <div class="col-lg-4">
+            <div class="footer-brand">
+              <img src="./image/logo.png" alt="" />
+              <p>
+                A modern coffeehouse where creativity and craft come together.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2">
+            <h5>Quick Links</h5>
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Gallery</li>
+              <li>Stories / Impact</li>
+              <li>Our Lab</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+
+          <!-- Our Menu -->
+          <div class="col-lg-3">
+            <h5>Our Menu</h5>
+            <ul>
+              <li>Americano Rosted Coffee</li>
+              <li>Italian Rosted Coffee</li>
+              <li>Brazilan Rosted Coffee</li>
+              <li>Mericano Cold Coffee</li>
+              <li>Mericano Cold Coffee</li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-3">
+            <h5>Contact Information</h5>
+            <ul class="contact-list">
+              <li><i class="bi bi-geo-alt-fill"></i> Malibu,USA</li>
+              <li><i class="bi bi-envelope-fill"></i> malibu@gmail.com</li>
+              <li><i class="bi bi-telephone-fill"></i> +123456789</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">© 2026 Alessis Lab. All rights reserved.</div>
+  </footer>
+  <script src="./js/script.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

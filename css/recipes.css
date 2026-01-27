@@ -1,0 +1,239 @@
+/* ================= RECIPES HERO ================= */
+.al-recipes-hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 420px;
+  overflow: hidden;
+  background: #0b3d33;
+  font-family: "Inter", sans-serif;
+}
+
+/* BACKGROUND IMAGE */
+.al-recipes-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.al-recipes-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* OVERLAY */
+.al-recipes-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 61, 51, 0.8),
+    rgba(11, 61, 51, 0.55)
+  );
+  z-index: 2;
+}
+
+/* CONTENT */
+.al-recipes-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.al-recipes-content h1 {
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.al-recipes-content p {
+  font-size: 16px;
+  color: #f1e8da;
+  max-width: 600px;
+}
+
+/* WAVE */
+.al-recipes-wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  line-height: 0;
+}
+
+.al-recipes-wave svg {
+  width: 100%;
+  height: 120px;
+  display: block;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 992px) {
+  .al-recipes-hero {
+    height: 60vh;
+  }
+
+  .al-recipes-wave svg {
+    height: 90px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .al-recipes-hero {
+    height: 52vh;
+    min-height: 340px;
+  }
+
+  .al-recipes-content h1 {
+    font-size: 32px;
+    letter-spacing: 1.5px;
+  }
+
+  .al-recipes-content p {
+    font-size: 14px;
+  }
+
+  .al-recipes-wave svg {
+    height: 70px;
+  }
+}
+
+/* ================= BLOG SECTION ================= */
+.coffee-blog {
+  padding: 90px 0;
+  background: #f5faf8;
+  font-family: "Inter", sans-serif;
+}
+
+/* HEADER */
+.coffee-blog-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.coffee-blog-header h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0b3d33;
+}
+
+.coffee-blog-header p {
+  font-size: 16px;
+  color: #5f7f76;
+  margin-top: 10px;
+}
+
+/* GRID */
+.coffee-blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+/* CARD */
+.coffee-blog-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #d9efe8;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+.coffee-blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(11, 61, 51, 0.15);
+}
+
+/* IMAGE */
+.coffee-blog-img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.coffee-blog-content {
+  padding: 24px;
+}
+
+.coffee-blog-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #1fa382;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.coffee-blog-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0b3d33;
+  margin-bottom: 10px;
+}
+
+.coffee-blog-content p {
+  font-size: 14.5px;
+  color: #5f7f76;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+/* BUTTON */
+.coffee-blog-btn {
+  display: inline-block;
+  padding: 10px 26px;
+  background: #1fa382;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.coffee-blog-btn:hover {
+  background: #16896d;
+}
+
+/* LOAD MORE */
+.coffee-blog-load {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.coffee-blog-load button {
+  padding: 14px 42px;
+  background: #1fa382;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.coffee-blog-load button:hover {
+  background: #16896d;
+}
+
+/* HIDDEN */
+.hidden-blog {
+  display: none;
+}
