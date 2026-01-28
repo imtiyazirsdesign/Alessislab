@@ -2367,7 +2367,7 @@ body {
   /* space for newsletter overlap */
   color: #e9f7f3;
    font-family: "Montserrat", sans-serif;
-   background-color: #021814;
+   background-color: #ffffff;
 
 }
 
@@ -2380,14 +2380,14 @@ body {
 .footer-brand p {
   font-size: 14px;
   max-width: 300px;
-  color: #cfeee7;
+  color: #000000;
 }
 
 /* HEADINGS */
 .footer-main h5 {
   margin-bottom: 20px;
   font-size: 18px;
-  color: #ffffff;
+  color: #01221c;
    font-family: "Montserrat", sans-serif;
 }
 
@@ -2400,7 +2400,7 @@ body {
 .footer-main ul li {
   margin-bottom: 10px;
   font-size: 14px;
-  color: #b6f1e4;
+  color: #000000;
   cursor: pointer;
   transition: color 0.3s ease;
    font-family: "Montserrat", sans-serif;
