@@ -8,7 +8,6 @@
   display: flex;
   align-items: center;
   background: url("../image/menu-header-bg.png") center / cover no-repeat;
-  font-family: "Inter", sans-serif;
 }
 
 /* Brand overlay */
@@ -35,6 +34,7 @@
   background: rgba(217, 243, 235, 0.18); /* mint glass */
   color: #e9f7f3;
   backdrop-filter: blur(8px);
+   font-family: "Montserrat", sans-serif;
 }
 
 /* Title */
@@ -44,6 +44,7 @@
   letter-spacing: 1px;
   margin-bottom: 12px;
   color: #ffffff;
+   font-family: "Montserrat", sans-serif;
 }
 
 /* Subtitle */
@@ -54,6 +55,7 @@
   margin: 0 auto;
   color: #cfeee7;
   opacity: 0.95;
+   font-family: "Montserrat", sans-serif;
 }
 
 /* Mobile Optimization */
@@ -81,7 +83,6 @@
   padding: 100px 0;
   background: #f3fbf8; /* light mint background */
   overflow: hidden;
-  font-family: "Inter", sans-serif;
 }
 
 /* BACKGROUND SHAPES */
@@ -125,12 +126,14 @@
   color: #14a98b;
   margin-bottom: 8px;
   font-weight: 600;
+   font-family: "Montserrat", sans-serif;
 }
 
 .al-popular-menu-header h2 {
   font-size: 38px;
   font-weight: 800;
   color: #0b3d33;
+   font-family: "Montserrat", sans-serif;
 }
 
 /* CARD */
@@ -146,6 +149,7 @@
   border: 1px solid #cfe9e2;
   box-shadow: 0 12px 32px rgba(11, 61, 51, 0.08);
   transition: all 0.35s ease;
+  margin-top: 10px;
 }
 
 .al-popular-menu-card:hover {
@@ -165,6 +169,7 @@
   font-weight: 600;
   margin-bottom: 6px;
   color: #0b3d33;
+   font-family: "Montserrat", sans-serif;
 }
 
 .al-popular-menu-content p {
@@ -172,6 +177,7 @@
   color: #4f6f68;
   margin: 0;
   max-width: 380px;
+   font-family: "Montserrat", sans-serif;
 }
 
 /* PRICE */
@@ -185,11 +191,13 @@
   font-weight: 700;
   color: #14a98b;
   display: block;
+   font-family: "Montserrat", sans-serif;
 }
 
 .al-popular-menu-price .old {
   font-size: 14px;
   color: #9bbdb5;
+   font-family: "Montserrat", sans-serif;
   text-decoration: line-through;
 }
 
@@ -219,7 +227,6 @@
     #eaf6f2
   );
   color: #0b3d33;
-  font-family: "Inter", sans-serif;
   position: relative;
 }
 
@@ -230,6 +237,7 @@
   letter-spacing: 1.5px;
   font-weight: 600;
   text-transform: uppercase;
+   font-family: "Montserrat", sans-serif;
 }
 
 .al-explore-menu-header h2 {
@@ -237,6 +245,7 @@
   font-weight: 800;
   margin-top: 6px;
   margin-bottom: 60px;
+   font-family: "Montserrat", sans-serif;
   color: #0b3d33;
 }
 
@@ -277,10 +286,12 @@
   font-weight: 600;
   margin-bottom: 6px;
   color: #0b3d33;
+   font-family: "Montserrat", sans-serif;
 }
 
 .al-explore-menu-info p {
   font-size: 14px;
+   font-family: "Montserrat", sans-serif;
   color: #4f6f68;
   margin: 0;
   max-width: 420px;
@@ -299,6 +310,7 @@
   font-weight: 700;
   color: #14a98b;
   display: block;
+    font-family: "Montserrat", sans-serif;
 }
 
 .al-explore-menu-price .old {

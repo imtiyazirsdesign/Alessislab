@@ -138,6 +138,29 @@ document.querySelectorAll(".gallery-swiper").forEach(swiperEl => {
   });
 });
 
+/* ================= REVIEWS MARQUEE JS ================= */
+
+/*
+  This JS is intentionally light.
+  It mirrors your Gallery JS behavior:
+  - Handles hover pause safely
+  - Ready if you later switch to Swiper or GSAP
+  - No conflict with CSS marquee
+*/
+
+document.querySelectorAll(".reviews-track").forEach(track => {
+  const inner = track.querySelector(".track-inner");
+
+  track.addEventListener("mouseenter", () => {
+    inner.style.animationPlayState = "paused";
+  });
+
+  track.addEventListener("mouseleave", () => {
+    inner.style.animationPlayState = "running";
+  });
+});
+
+
 
 /* ================= HABIT TABS (FIXED) ================= */
     const habitTabs = document.querySelectorAll(".tab-btn");

@@ -1,17 +1,25 @@
 /* ================= GLOBAL ================= */
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
- 
+
 }
+
 body {
-  font-family: "Inter", sans-serif;
-   overflow-x: hidden;
+  overflow-x: hidden;
+}
+@media screen and (max-width:772px) {
+  body{
+    overflow-x: hidden !important;
+  }
+}
+@media screen and (max-width:668px) {
+  body{
+    overflow-x: hidden !important;
+  }
 }
 
-
-/* ================= NAVBAR ================= */
 /* ================= NAVBAR ================= */
 .coffee-navbar {
   position: sticky;
@@ -36,11 +44,12 @@ body {
 /* NAV LINKS */
 .coffee-navbar .nav-link {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   color: #0b3d33;
   position: relative;
   padding: 6px 0;
   transition: color 0.3s ease;
+   font-family: "Montserrat", sans-serif;
 }
 
 /* ACTIVE + HOVER */
@@ -128,13 +137,11 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(7, 45, 38, 0.85),
-    rgba(7, 45, 38, 0.65),
-    rgba(7, 45, 38, 0.35),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      rgba(7, 45, 38, 0.85),
+      rgba(7, 45, 38, 0.65),
+      rgba(7, 45, 38, 0.35),
+      transparent);
   z-index: 1;
 }
 
@@ -249,7 +256,7 @@ body {
 .favorites-section {
   padding: 100px 0;
   background: #ffffff;
-  font-family: "Inter", sans-serif;
+
 }
 
 /* ================= HEADER ================= */
@@ -260,15 +267,18 @@ body {
 
 .favorites-title {
   font-size: 36px;
-  font-weight: 700;
-  color: #0b3d33; /* brand dark green */
+  font-weight: 650;
+  color: #0b3d33;
+  /* brand dark green */
   margin-bottom: 6px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .favorites-subtitle {
   font-size: 15px;
   color: #5f6f6b;
   line-height: 1.7;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ================= GRID ================= */
@@ -316,12 +326,14 @@ body {
   color: #1f2933;
   line-height: 1.4;
   margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .price {
   font-size: 15px;
   font-weight: 700;
-  color: #0f7f66; /* brand accent */
+  color: #0f7f66;
+  /* brand accent */
   margin-bottom: 22px;
 }
 
@@ -337,6 +349,7 @@ body {
   font-weight: 700;
   text-decoration: none;
   transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
 }
 
 .btn-primary:hover {
@@ -427,8 +440,10 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 28px;
-  background: rgba(15, 127, 102, 0.12); /* light brand green */
-  color: #0b3d33; /* dark brand green */
+  background: rgba(15, 127, 102, 0.12);
+  /* light brand green */
+  color: #0b3d33;
+  /* dark brand green */
   border-radius: 8px;
   transition: all 0.35s ease;
 }
@@ -446,6 +461,7 @@ body {
   text-transform: capitalize;
   color: #0b3d33;
   transition: color 0.3s ease;
+  font-family: "Montserrat", sans-serif;
 }
 
 .feature-box:hover .feature-title {
@@ -454,6 +470,7 @@ body {
 
 /* ================= TEXT ================= */
 .feature-text {
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: #5f6f6b;
   line-height: 1.6;
@@ -512,6 +529,7 @@ body {
   font-weight: 700;
   color: #e9f7f3;
   margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ================= GRID ================= */
@@ -544,6 +562,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ================= LABEL ================= */
@@ -620,11 +639,12 @@ body {
   align-items: center;
   gap: 6px;
   margin-bottom: 16px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ================= HEADING ================= */
 .about-heading {
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 42px;
   font-weight: 700;
   line-height: 1.25;
@@ -639,6 +659,7 @@ body {
   line-height: 1.75;
   max-width: 480px;
   margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ================= POINTS LIST ================= */
@@ -669,12 +690,14 @@ body {
   font-size: 14px;
   font-weight: 600;
   color: #0b3d33;
+  font-family: "Montserrat", sans-serif;
 }
 
 .point-content p {
   font-size: 13px;
   color: #5f6f6b;
   margin: 2px 0 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ================= BUTTON ================= */
@@ -688,6 +711,7 @@ body {
   font-weight: 500;
   text-decoration: none;
   transition: 0.3s ease;
+  font-family: "Montserrat", sans-serif;
 }
 
 .about-btn:hover {
@@ -759,7 +783,7 @@ body {
 
 /* ================= COFFEE HERALD ================= */
 .coffee-herald {
- background-color: #072d26;
+  background-color: #072d26;
   background-size: cover;
   padding: 110px 0 130px;
   font-family: "Inter", sans-serif;
@@ -768,7 +792,7 @@ body {
 
 /* ================= HEADER ================= */
 .herald-header h2 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 50px;
   font-weight: 700;
   color: white;
@@ -794,6 +818,7 @@ body {
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.7;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ================= CARD ================= */
@@ -818,7 +843,8 @@ body {
 .card-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(15, 127, 102, 0.6); /* brand green overlay */
+  background: rgba(15, 127, 102, 0.6);
+  /* brand green overlay */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -852,6 +878,7 @@ body {
   font-weight: 600;
   color: #1fa187;
   margin-bottom: 8px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ================= TEXT ================= */
@@ -859,6 +886,7 @@ body {
   font-size: 13.5px;
   color: white;
   line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -894,7 +922,7 @@ body {
   background: url("../image/menu-bg.png") center / cover no-repeat;
   padding: 120px 0;
   color: #ffffff;
-  font-family: "Inter", sans-serif;
+
 }
 
 /* ================= HEADER ================= */
@@ -905,7 +933,7 @@ body {
 }
 
 .popular-menu .menu-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 46px;
   font-weight: 700;
   margin-bottom: 60px;
@@ -915,11 +943,9 @@ body {
 /* ================= GLASS PANEL ================= */
 .popular-menu .menu-glass {
   position: relative;
-  background: radial-gradient(
-    circle,
-    rgba(20, 169, 139, 0.45),
-    rgba(7, 45, 38, 0.9)
-  );
+  background: radial-gradient(circle,
+      rgba(20, 169, 139, 0.45),
+      rgba(7, 45, 38, 0.9));
   border-radius: 28px;
   padding: 55px 60px;
   display: flex;
@@ -980,12 +1006,14 @@ body {
   font-weight: 600;
   margin-bottom: 4px;
   color: #0b3d33;
+  font-family: "Montserrat", sans-serif;
 }
 
 .popular-menu .menu-item p {
   font-size: 11.5px;
   color: #5f6f6b;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* PRICE */
@@ -1051,6 +1079,7 @@ body {
   font-size: 13px;
   text-decoration: none;
   transition: 0.3s;
+  font-family: "Montserrat", sans-serif;
 }
 
 .popular-menu .view-more:hover {
@@ -1143,7 +1172,6 @@ body {
   padding: 90px 0 100px;
   position: relative;
   overflow: hidden;
-  font-family: "Inter", sans-serif;
 }
 
 /* DECOR */
@@ -1173,7 +1201,7 @@ body {
 
 /* TITLE */
 .siglab-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 42px;
   font-weight: 700;
   color: #0b3d33;
@@ -1232,12 +1260,14 @@ body {
 
 /* TEXT */
 .siglab-product-title {
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
 .siglab-text {
+  font-family: "Montserrat", sans-serif;
   font-size: 12.5px;
   line-height: 1.6;
   opacity: 0.95;
@@ -1248,6 +1278,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   margin: 12px 0 16px;
+
 }
 
 .siglab-price span {
@@ -1265,6 +1296,7 @@ body {
   font-size: 12px;
   border-radius: 7px;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 .siglab-btn:hover {
@@ -1278,6 +1310,7 @@ body {
   color: #14a98b;
   border-radius: 7px;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 .siglab-view-more:hover {
@@ -1291,6 +1324,7 @@ body {
     opacity: 0;
     transform: translateY(12px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1299,6 +1333,7 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 991px) {
+
   .siglab-decor-left,
   .siglab-decor-right {
     display: none;
@@ -1321,7 +1356,6 @@ body {
 .stats-section {
   padding: 120px 0;
   background-color: #072d26;
-  font-family: "Inter", sans-serif;
 }
 
 /* ================= CONTAINER ================= */
@@ -1343,10 +1377,11 @@ body {
 
 /* ================= NUMBER ================= */
 .stats-section .stat-number {
-  font-family: "Georgia", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 64px;
   font-weight: 400;
-  color: white; /* brand dark green */
+  color: white;
+  /* brand dark green */
   margin-bottom: 22px;
   position: relative;
 }
@@ -1356,19 +1391,23 @@ body {
   content: "+";
   font-size: 48px;
   margin-left: 4px;
-  color: #14a98b; /* brand accent green */
+  color: #14a98b;
+  /* brand accent green */
 }
 
 /* ================= TITLE ================= */
 .stats-section .stat-title {
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 600;
-  color: #0f7f66; /* brand green */
+  color: #0f7f66;
+  /* brand green */
   margin-bottom: 16px;
 }
 
 /* ================= TEXT ================= */
 .stats-section .stat-text {
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   line-height: 1.6;
   color: white;
@@ -1402,9 +1441,11 @@ body {
 
 /* TITLE */
 .gallery-title {
-  font-family: "Kavoon", serif;
+     font-family: "Montserrat", sans-serif;
   font-size: 72px;
-  color: #0b3d33; /* brand dark green */
+  font-weight: 600;
+  color: #0b3d33;
+  /* brand dark green */
 }
 
 .gallery-divider img {
@@ -1416,6 +1457,7 @@ body {
   max-width: 650px;
   margin: auto;
   color: #5f6f6b;
+     font-family: "Montserrat", sans-serif;
 }
 
 /* ================= MARQUEE ================= */
@@ -1476,7 +1518,8 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(15, 127, 102, 0.65); /* brand green overlay */
+  background: rgba(15, 127, 102, 0.65);
+  /* brand green overlay */
   opacity: 0;
   transition: opacity 0.4s ease;
   z-index: 1;
@@ -1493,18 +1536,21 @@ body {
   opacity: 0;
   transform: translateY(15px);
   transition: all 0.4s ease;
+   
 }
 
 .overlay-content h5 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 4px;
+     font-family: "Montserrat", sans-serif;
 }
 
 .overlay-content p {
   font-size: 14px;
   opacity: 0.9;
   margin: 0;
+     font-family: "Montserrat", sans-serif;
 }
 
 /* HOVER EFFECTS */
@@ -1524,13 +1570,23 @@ body {
 
 /* ================= KEYFRAMES ================= */
 @keyframes loopLeft {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes loopRight {
-  from { transform: translateX(-50%); }
-  to { transform: translateX(0); }
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
 
 /* ================= RESPONSIVE ================= */
@@ -1544,7 +1600,27 @@ body {
     height: 220px;
   }
 }
+/* FIX MOBILE OVERFLOW ISSUE */
+.sweet-gallery,
+.gallery-marquee,
+.gallery-track {
+  overflow-x: hidden;
+}
 
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .gallery-track {
+    width: 100%;
+  }
+
+  .track-inner {
+    will-change: transform;
+  }
+}
 
 
 /* ================= FEATURED BLOG ================= */
@@ -1554,10 +1630,11 @@ body {
 
 /* ================= TITLE ================= */
 .blog-title {
-  font-family: "Kavoon", serif;
+   font-family: "Montserrat", sans-serif;
   font-size: 70px;
-  font-weight: 400;
-  color: #0b3d33; /* brand dark green */
+  font-weight: 600;
+  color: #0b3d33;
+  /* brand dark green */
 }
 
 /* ================= DIVIDER ================= */
@@ -1579,6 +1656,9 @@ body {
   margin: auto;
   color: #5f6f6b;
   font-size: 15px;
+
+    font-family: "Montserrat", sans-serif;
+     
 }
 
 /* ================= BLOG CARD ================= */
@@ -1603,6 +1683,7 @@ body {
   font-weight: 600;
   color: #0b3d33;
   margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* ================= META ================= */
@@ -1630,6 +1711,7 @@ body {
   color: #14a98b;
   background: transparent;
   transition: 0.3s ease;
+    font-family: "Montserrat", sans-serif;
 }
 
 .blog-btn.active,
@@ -1643,15 +1725,16 @@ body {
 .benefits-v2 {
   padding: 100px 0;
   background-color: #072d26;
-  font-family: "Inter", sans-serif;
 }
 
 /* ================= TITLE ================= */
 .benefits-title {
   font-size: 36px;
   font-weight: 700;
-  color: white; /* brand dark green */
+  color: white;
+  /* brand dark green */
   margin-bottom: 60px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ================= GRID ================= */
@@ -1687,14 +1770,18 @@ body {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #0f7f66; /* brand accent green */
+  color: #0f7f66;
+  /* brand accent green */
   margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .benefit-body p {
   font-size: 15px;
   line-height: 1.6;
-  color: #5f6f6b; /* green-gray */
+  color: #5f6f6b;
+    font-family: "Montserrat", sans-serif;
+  /* green-gray */
 }
 
 /* ================= ARROW INDICATOR ================= */
@@ -1756,7 +1843,8 @@ body {
 .shape-left {
   width: 280px;
   height: 280px;
-  background: #14a98b; /* brand accent */
+  background: #14a98b;
+  /* brand accent */
   top: -120px;
   left: -120px;
 }
@@ -1764,7 +1852,8 @@ body {
 .shape-right {
   width: 260px;
   height: 260px;
-  background: #051f1a; /* deep brand green */
+  background: #051f1a;
+  /* deep brand green */
   bottom: -120px;
   right: -120px;
 }
@@ -1786,6 +1875,7 @@ body {
   background: rgba(20, 169, 139, 0.2);
   color: #14a98b;
   margin-bottom: 12px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .al-faq-header h2 {
@@ -1793,12 +1883,14 @@ body {
   font-weight: 700;
   margin-bottom: 10px;
   color: #ffffff;
+  font-family: "Montserrat", sans-serif;
 }
 
 .al-faq-header p {
   font-size: 1rem;
   opacity: 0.85;
   color: #d6f0ea;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ================= ACCORDION ================= */
@@ -1823,7 +1915,8 @@ body {
 }
 
 .al-faq-accordion .accordion-button:not(.collapsed) {
-  color: #14a98b; /* active brand green */
+  color: #14a98b;
+  /* active brand green */
 }
 
 .al-faq-accordion .accordion-button::after {
@@ -1869,15 +1962,17 @@ body {
 .habit-v2 {
   padding: 90px 0;
   background: #ffffff;
-  font-family: "Inter", sans-serif;
 }
 
 /* ================= TITLE ================= */
 .habit-title {
   font-size: 32px;
   font-weight: 700;
-  color: #0b3d33; /* brand dark green */
+  color: #0b3d33;
+  /* brand dark green */
   margin-bottom: 18px;
+   font-family: "Montserrat", sans-serif;
+  
 }
 
 /* ================= TABS ================= */
@@ -1892,10 +1987,12 @@ body {
   border: none;
   font-size: 15px;
   font-weight: 600;
-  color: #5f6f6b; /* green-gray */
+  color: #5f6f6b;
+  /* green-gray */
   cursor: pointer;
   position: relative;
   padding-bottom: 6px;
+   font-family: "Montserrat", sans-serif;
 }
 
 .tab-btn.active {
@@ -1945,6 +2042,7 @@ body {
   font-size: 15px;
   font-weight: 600;
   color: #0b3d33;
+   font-family: "Montserrat", sans-serif;
 }
 
 .habit-card small {
@@ -1960,6 +2058,7 @@ body {
     opacity: 0;
     transform: translateY(12px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1972,42 +2071,44 @@ body {
   padding: 100px 0;
   background: radial-gradient(circle at top, #0b3d33, #051f1a 70%);
   overflow: hidden;
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* ================= TITLES ================= */
+/* TITLES */
 .reviews-title {
   font-size: 40px;
   font-weight: 700;
   color: #e9f7f3;
+  font-family: "Montserrat", sans-serif;
 }
 
 .reviews-subtitle {
   color: #a9d8cc;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* ================= MARQUEE ================= */
+/* MARQUEE */
 .reviews-marquee {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  overflow: hidden;
 }
 
 /* TRACK */
 .reviews-track {
   width: 100%;
   overflow: hidden;
-  position: relative;
 }
 
 .track-inner {
   display: flex;
-  gap: 28px;
+  gap: 25px;
   width: max-content;
   will-change: transform;
 }
 
-/* ================= CARD ================= */
+/* CARD */
 .review-card {
   width: 260px;
   padding: 30px;
@@ -2026,7 +2127,7 @@ body {
   box-shadow: 0 20px 45px rgba(20, 169, 139, 0.25);
 }
 
-/* ================= AVATAR ================= */
+/* AVATAR */
 .review-avatar {
   width: 80px;
   height: 80px;
@@ -2042,27 +2143,30 @@ body {
   object-fit: cover;
 }
 
-/* ================= STARS ================= */
+/* STARS */
 .review-stars {
   color: #7ff0d4;
   margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* ================= TEXT ================= */
+/* TEXT */
 .review-text {
   font-size: 14px;
   line-height: 1.6;
   color: #e0f4ee;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* ================= NAME ================= */
+/* NAME */
 .review-name {
   font-size: 18px;
   font-weight: 600;
   color: #b6f1e4;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* ================= ANIMATION ================= */
+/* ANIMATION (SAME AS GALLERY) */
 .track-left .track-inner {
   animation: reviewsLeft 35s linear infinite;
 }
@@ -2076,23 +2180,37 @@ body {
   animation-play-state: paused;
 }
 
-/* ================= KEYFRAMES ================= */
+/* KEYFRAMES */
 @keyframes reviewsLeft {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes reviewsRight {
-  from { transform: translateX(-50%); }
-  to { transform: translateX(0); }
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
-/* ================= MOBILE ================= */
+/* MOBILE */
 @media (max-width: 768px) {
   .review-card {
     width: 280px;
   }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }
+
 
 
 
@@ -2102,8 +2220,8 @@ body {
   padding: 50px 0;
   position: relative;
   z-index: 5;
-  transform: translateY(80px); /* SAFE overlap */
-  font-family: "Inter", sans-serif;
+  transform: translateY(80px);
+  /* SAFE overlap */
 }
 
 /* ================= WRAPPER ================= */
@@ -2123,6 +2241,7 @@ body {
 .newsletter-content {
   color: #ffffff;
   padding-left: 20px;
+   font-family: "Montserrat", sans-serif;
 }
 
 .newsletter-label {
@@ -2138,6 +2257,7 @@ body {
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 20px;
+   font-family: "Montserrat", sans-serif;
 }
 
 /* ================= FORM ================= */
@@ -2155,6 +2275,7 @@ body {
   padding: 8px 5px;
   color: #ffffff;
   font-size: 15px;
+   font-family: "Montserrat", sans-serif;
 }
 
 .newsletter-form input::placeholder {
@@ -2175,6 +2296,7 @@ body {
   font-size: 15px;
   cursor: pointer;
   transition: 0.3s ease;
+   font-family: "Montserrat", sans-serif;
 }
 
 .newsletter-form button:hover {
@@ -2186,17 +2308,19 @@ body {
 /* ================= FOOTER ================= */
 
 .coffee-footer {
-  background:  #051f1a; /* brand dark green */
+  background: #051f1a;
+  /* brand dark green */
   position: relative;
   z-index: 1;
-  font-family: "Poppins", sans-serif;
 }
 
 /* ================= MAIN FOOTER ================= */
 .footer-main {
-  padding: 160px 0 50px; /* space for newsletter overlap */
+  padding: 160px 0 50px;
+  /* space for newsletter overlap */
   color: #e9f7f3;
-  
+   font-family: "Montserrat", sans-serif;
+
 }
 
 /* BRAND */
@@ -2216,6 +2340,7 @@ body {
   margin-bottom: 20px;
   font-size: 18px;
   color: #ffffff;
+   font-family: "Montserrat", sans-serif;
 }
 
 /* LISTS */
@@ -2230,6 +2355,7 @@ body {
   color: #b6f1e4;
   cursor: pointer;
   transition: color 0.3s ease;
+   font-family: "Montserrat", sans-serif;
 }
 
 .footer-main ul li:hover {
@@ -2244,20 +2370,24 @@ body {
 }
 
 .contact-list i {
-  background: #14a98b; /* brand accent */
+  background: #14a98b;
+  /* brand accent */
   padding: 8px;
   border-radius: 50%;
   font-size: 14px;
   color: #ffffff;
+   font-family: "Montserrat", sans-serif;
 }
 
 /* ================= COPYRIGHT ================= */
 .footer-bottom {
-  background: #0b3d33; /* deepest brand green */
+  background: #0b3d33;
+  /* deepest brand green */
   color: #b6f1e4;
   text-align: center;
   padding: 18px 0;
   font-size: 14px;
+   font-family: "Montserrat", sans-serif;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -2280,6 +2410,7 @@ body {
     width: 100%;
   }
 }
+
 /* ================= OUR STORY CONTENT ================= */
 .al-story-section {
   padding: 120px 0;
@@ -2337,7 +2468,7 @@ body {
 
 .al-cup-float img {
   width: 100%;
-  filter: drop-shadow(0 25px 35px rgba(0,0,0,0.25));
+  filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.25));
 }
 
 /* ================= CONTENT ================= */

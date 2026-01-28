@@ -6,7 +6,6 @@
   min-height: 420px;
   overflow: hidden;
   background: #0b3d33;
-  font-family: "Inter", sans-serif;
 }
 
 /* BACKGROUND IMAGE */
@@ -52,6 +51,7 @@
   font-weight: 800;
   letter-spacing: 2px;
   color: #ffffff;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 12px;
 }
 
@@ -59,6 +59,7 @@
   font-size: 16px;
   color: #f1e8da;
   max-width: 600px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* WAVE */
@@ -115,7 +116,6 @@
 .coffee-blog {
   padding: 90px 0;
   background: #f5faf8;
-  font-family: "Inter", sans-serif;
 }
 
 /* HEADER */
@@ -128,11 +128,13 @@
   font-size: 36px;
   font-weight: 800;
   color: #0b3d33;
+  font-family: "Montserrat", sans-serif;
 }
 
 .coffee-blog-header p {
   font-size: 16px;
   color: #5f7f76;
+  font-family: "Montserrat", sans-serif;
   margin-top: 10px;
 }
 
@@ -174,6 +176,7 @@
   padding: 6px 14px;
   background: #1fa382;
   color: #fff;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 600;
   border-radius: 20px;
@@ -184,12 +187,14 @@
   font-size: 20px;
   font-weight: 700;
   color: #0b3d33;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 10px;
 }
 
 .coffee-blog-content p {
   font-size: 14.5px;
   color: #5f7f76;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.6;
   margin-bottom: 22px;
 }
@@ -226,6 +231,7 @@
   font-weight: 600;
   border-radius: 30px;
   cursor: pointer;
+  font-family: "Montserrat", sans-serif;
   transition: 0.3s;
 }
 

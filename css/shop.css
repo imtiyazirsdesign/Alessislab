@@ -6,7 +6,7 @@
   min-height: 420px;
   overflow: hidden;
   background: #0b3d33;
-  font-family: "Inter", sans-serif;
+
 }
 
 /* BACKGROUND IMAGE */
@@ -50,6 +50,7 @@
   font-weight: 800;
   letter-spacing: 2px;
   color: #ffffff;
+   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
 
@@ -102,7 +103,6 @@
 .al-shop {
   padding: 80px 0;
   background: #f5fbf9;
-  font-family: "Inter", sans-serif;
 }
 
 .shop-layout {
@@ -122,12 +122,14 @@
 .filter-title {
   font-size: 14px;
   font-weight: 700;
+   font-family: "Montserrat", sans-serif;
 }
 
 .filter-note {
   font-size: 13px;
   color: #7a7a7a;
   margin-bottom: 20px;
+   font-family: "Montserrat", sans-serif;
 }
 
 .filter-group {
@@ -139,6 +141,7 @@
   font-weight: 700;
   margin-bottom: 12px;
   color: #0b3d33;
+   font-family: "Montserrat", sans-serif;
 }
 
 .filter-group label {
@@ -146,11 +149,13 @@
   font-size: 14px;
   margin-bottom: 10px;
   cursor: pointer;
+   font-family: "Montserrat", sans-serif;
 }
 
 .filter-group input {
   margin-right: 8px;
   accent-color: #1fa187;
+   font-family: "Montserrat", sans-serif;
 }
 
 /* TOP BAR */
@@ -209,6 +214,7 @@
   color: #fff;
   font-size: 12px;
   padding: 4px 10px;
+   font-family: "Montserrat", sans-serif;
   border-radius: 50px;
 }
 
@@ -241,6 +247,7 @@
 .price .old {
   font-size: 14px;
   color: #999;
+   font-family: "Montserrat", sans-serif;
   text-decoration: line-through;
   margin-left: 6px;
 }
@@ -253,6 +260,7 @@
   border: none;
   padding: 10px;
   border-radius: 10px;
+   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   cursor: pointer;
 }
