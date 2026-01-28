@@ -519,7 +519,8 @@ body {
 
 /* ================= OFFER SECTION ================= */
 .offer-section {
-  padding: 90px 0;
+  /* padding: 90px 0; */
+  padding: 180px 0;
   background: linear-gradient(135deg, #072d26, #0b3d33);
   font-family: "Inter", sans-serif;
 }
