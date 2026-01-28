@@ -2359,6 +2359,7 @@ body {
   /* brand dark green */
   position: relative;
   z-index: 1;
+  border-top:2px solid #14a98b;
 }
 
 /* ================= MAIN FOOTER ================= */
