@@ -2359,7 +2359,7 @@ body {
   /* brand dark green */
   position: relative;
   z-index: 1;
-  border-top:2px solid #14a98b;
+ 
 }
 
 /* ================= MAIN FOOTER ================= */
@@ -2369,7 +2369,7 @@ body {
   color: #e9f7f3;
    font-family: "Montserrat", sans-serif;
    background-color: #ffffff;
-
+ border-top:2px solid #14a98b;
 }
 
 /* BRAND */
