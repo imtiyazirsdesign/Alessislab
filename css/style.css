@@ -291,7 +291,8 @@ body {
 /* ================= CARD ================= */
 .product-card {
   background: #ffffff;
-  border: 1px solid rgba(15, 127, 102, 0.35);
+   background: linear-gradient(135deg,#14a98b , #072d26);
+   border-radius: 10px;
   padding: 28px 24px 32px;
   display: flex;
   flex-direction: column;
@@ -323,7 +324,7 @@ body {
 .product-title {
   font-size: 15px;
   font-weight: 600;
-  color: #1f2933;
+  color: white;
   line-height: 1.4;
   margin-bottom: 10px;
   font-family: "Montserrat", sans-serif;
@@ -332,7 +333,7 @@ body {
 .price {
   font-size: 15px;
   font-weight: 700;
-  color: #0f7f66;
+  color: white;
   /* brand accent */
   margin-bottom: 22px;
 }
@@ -1960,95 +1961,130 @@ body {
 
 /* ===== HABIT V2 ===== */
 .habit-v2 {
-  padding: 90px 0;
-  background: #ffffff;
+  position: relative;
+  padding: 100px 0;
+  background: #f7fbfa;
+  overflow: hidden;
+}
+
+/* ================= BACKGROUND SHAPES ================= */
+.habit-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.35;
+  z-index: 0;
+}
+
+.shape-1 {
+  width: 320px;
+  height: 320px;
+  background: #14a98b;
+  top: -120px;
+  left: -120px;
+}
+
+.shape-2 {
+  width: 420px;
+  height: 420px;
+  background: #0b3d33;
+  bottom: -180px;
+  right: -180px;
 }
 
 /* ================= TITLE ================= */
 .habit-title {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: clamp(26px, 3vw, 36px);
+  font-weight: 800;
   color: #0b3d33;
-  /* brand dark green */
-  margin-bottom: 18px;
-   font-family: "Montserrat", sans-serif;
-  
+  margin-bottom: 28px;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  z-index: 1;
 }
 
 /* ================= TABS ================= */
 .habit-tabs {
   display: flex;
-  gap: 26px;
-  margin-bottom: 40px;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 46px;
+  position: relative;
+  z-index: 1;
 }
 
 .tab-btn {
-  background: none;
-  border: none;
-  font-size: 15px;
+  background: rgba(11, 61, 51, 0.08);
+  border: 1px solid rgba(11, 61, 51, 0.15);
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 14px;
   font-weight: 600;
-  color: #5f6f6b;
-  /* green-gray */
+  color: #0b3d33;
   cursor: pointer;
-  position: relative;
-  padding-bottom: 6px;
-   font-family: "Montserrat", sans-serif;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+}
+
+.tab-btn:hover {
+  background: rgba(20, 169, 139, 0.15);
 }
 
 .tab-btn.active {
-  color: #0b3d33;
-}
-
-.tab-btn.active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
   background: linear-gradient(135deg, #0f7f66, #14a98b);
+  color: #ffffff;
+  box-shadow: 0 8px 22px rgba(20, 169, 139, 0.35);
 }
 
 /* ================= GRID ================= */
 .habit-content-grid {
   display: none;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 28px;
-  animation: fadeUp 0.4s ease;
+  gap: 32px;
+  animation: fadeUp 0.5s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .habit-content-grid.active {
   display: grid;
 }
 
-/* ================= CARD ================= */
+/* ================= CARD (GLASS STYLE) ================= */
 .habit-card {
-  border: 1px solid rgba(20, 169, 139, 0.35);
-  border-radius: 16px;
-  padding: 16px;
-  background: #ffffff;
-  transition: border-color 0.3s ease;
+ background: linear-gradient(135deg,#14a98b , #072d26);
+  border: 1px solid rgba(20, 169, 139, 0.4);
+  border-radius: 20px;
+  padding: 18px;
+  backdrop-filter: blur(12px);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.habit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(11, 61, 51, 0.35);
 }
 
 .habit-card img {
   width: 100%;
   height: 260px;
   object-fit: cover;
-  margin-bottom: 14px;
+  border-radius: 14px;
+  margin-bottom: 16px;
 }
 
 /* TEXT */
 .habit-card p {
   font-size: 15px;
   font-weight: 600;
-  color: #0b3d33;
-   font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
 }
 
 .habit-card small {
   display: block;
   font-size: 13px;
-  color: #5f6f6b;
+  color: #d7f2ec;
   margin-top: 6px;
 }
 
@@ -2056,14 +2092,25 @@ body {
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(12px);
+    transform: translateY(14px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .habit-v2 {
+    padding: 80px 0;
+  }
+
+  .habit-tabs {
+    gap: 12px;
+  }
+}
+
 
 
 /* ================= COFFEE REVIEWS ================= */
