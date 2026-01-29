@@ -171,7 +171,8 @@ body {
 
 /* TITLE */
 .hero-title {
-  font-family: "Kavoon", serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   font-size: 70px;
   margin-bottom: 18px;
   color: #ffffff;
