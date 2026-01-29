@@ -1,0 +1,260 @@
+:root {
+    --primary: #0f3d2e;
+    --secondary: #1fa37a;
+    --bg: #f5f8f7;
+    --glass: rgba(255, 255, 255, 0.75);
+    --border: rgba(255, 255, 255, 0.4);
+}
+
+body {
+    background: var(--bg);
+    font-family: Inter, system-ui, sans-serif;
+}
+
+/* ================= SIDEBAR ================= */
+.profile-sidebar {
+    position: sticky;
+    top: 30px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 26px;
+    padding: 35px;
+    color: #fff;
+}
+
+.profile-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+.profile-menu a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.profile-menu a.active,
+.profile-menu a:hover {
+    background: rgba(255, 255, 255, .18);
+}
+
+/* ================= CONTENT ================= */
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.glass-card {
+    background: var(--glass);
+    backdrop-filter: blur(14px);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 35px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, .08);
+}
+
+/* ================= FORM ================= */
+.form-label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-control {
+    height: 52px;
+    border-radius: 16px;
+    border: 1px solid #e5e5e5;
+}
+
+.form-control:focus {
+    border-color: var(--secondary);
+    box-shadow: none;
+}
+
+/* ================= PROFILE UPGRADE ================= */
+.profile-avatar-lg {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    object-fit: cover;
+}
+
+.profile-upload {
+    position: relative;
+    display: inline-block;
+}
+
+.upload-btn {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    background: var(--secondary);
+    color: #fff;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+    transition: transform .2s ease;
+}
+
+.upload-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ================= PASSWORD ================= */
+.password-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+}
+
+.toggle-password:hover {
+    color: var(--secondary);
+}
+
+/* ================= BUTTON ================= */
+.btn-save {
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
+    border: none;
+    color: #fff;
+    height: 52px;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 0 35px;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.btn-save:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.15);
+}
+
+/* ================= ORDER TABLE ================= */
+.order-table-wrapper {
+    overflow-x: auto;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 14px;
+}
+
+.order-table thead th {
+    font-size: 14px;
+    color: #666;
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.order-table tbody tr {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.06);
+}
+
+.order-table td {
+    padding: 18px;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.order-table tbody tr td:first-child {
+    border-radius: 16px 0 0 16px;
+}
+
+.order-table tbody tr td:last-child {
+    border-radius: 0 16px 16px 0;
+}
+
+/* STATUS */
+.status {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.status.delivered {
+    background: rgba(31,163,122,.15);
+    color: var(--secondary);
+}
+
+.status.processing {
+    background: rgba(255,193,7,.25);
+    color: #c69500;
+}
+
+/* VIEW BUTTON */
+.btn-view {
+    background: transparent;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 14px;
+    transition: all .3s ease;
+}
+
+.btn-view:hover {
+    background: var(--secondary);
+    color: #fff;
+}
+
+/* ================= ADDRESS ================= */
+.address-card {
+    border: 1px solid #eee;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.address-actions a {
+    margin-right: 15px;
+    color: var(--secondary);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:991px) {
+    .profile-sidebar {
+        position: static;
+        margin-bottom: 25px;
+    }
+
+    .glass-card {
+        padding: 25px;
+    }
+
+    .profile-avatar-lg {
+        width: 120px;
+        height: 120px;
+    }
+}

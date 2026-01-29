@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>My Cart | Alessilabs</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Americano Roasted Coffee | Alessilabs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap -->
+ <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Icons -->
@@ -17,13 +16,16 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/cart.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/product-details.css">
+
+
 </head>
 
 <body>
 
-  <!-- ================= NAVBAR ================= -->
+      <!-- ================= NAVBAR ================= -->
   <nav class="navbar navbar-expand-lg coffee-navbar">
     <div class="container">
 
@@ -74,98 +76,90 @@
     </div>
   </nav>
 
-  <section class="cart-page">
-    <div class="container">
-      <h3 class="fw-bold mb-4">Shopping Cart</h3>
 
-      <div class="row g-4">
+<!-- HERO -->
+<section class="product-hero text-center">
+  <div class="container">
+    <h1>Americano Roasted Coffee</h1>
+    <p>Bold flavor. Crafted with science.</p>
+  </div>
+</section>
 
-        <!-- CART ITEMS -->
-        <div class="col-lg-8">
-          <div class="glass-card">
+<!-- PRODUCT DETAILS -->
+<section class="container">
+  <div class="product-wrapper row g-5">
 
-            <!-- ITEM -->
-            <div class="cart-item">
-              <img src="./image/menu/Americano Rosted Coffee.png" class="cart-img">
-              <div class="flex-grow-1">
-                <h6 class="fw-bold mb-1">Americano Roasted Coffee</h6>
-                <small class="text-muted">250g Pack</small>
-
-                <div class="d-flex align-items-center gap-3 mt-3">
-                  <div class="qty-box">
-                    <button onclick="changeQty(this,-1)">−</button>
-                    <input type="text" value="1" readonly>
-                    <button onclick="changeQty(this,1)">+</button>
-                  </div>
-                  <span class="remove">
-                    <i class="bi bi-trash"></i> Remove
-                  </span>
-                </div>
-              </div>
-              <div class="price">₹499</div>
-            </div>
-
-            <!-- ITEM -->
-            <div class="cart-item">
-              <img src="./image/menu/AmericanoRostedCoffee.png" class="cart-img">
-              <div class="flex-grow-1">
-                <h6 class="fw-bold mb-1">Premium Espresso Beans</h6>
-                <small class="text-muted">500g Pack</small>
-
-                <div class="d-flex align-items-center gap-3 mt-3">
-                  <div class="qty-box">
-                    <button onclick="changeQty(this,-1)">−</button>
-                    <input type="text" value="2" readonly>
-                    <button onclick="changeQty(this,1)">+</button>
-                  </div>
-                  <span class="remove">
-                    <i class="bi bi-trash"></i> Remove
-                  </span>
-                </div>
-              </div>
-              <div class="price">₹899</div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- SUMMARY -->
-        <div class="col-lg-4">
-          <div class="glass-card">
-            <h5 class="fw-bold mb-4">Order Summary</h5>
-
-            <div class="d-flex justify-content-between mb-2">
-              <span>Subtotal</span>
-              <strong>₹1,398</strong>
-            </div>
-
-            <div class="d-flex justify-content-between mb-2">
-              <span>Shipping</span>
-              <strong>₹99</strong>
-            </div>
-
-            <div class="d-flex justify-content-between mb-3">
-              <span>Tax</span>
-              <strong>₹0</strong>
-            </div>
-
-            <hr>
-
-            <div class="d-flex justify-content-between mb-4">
-              <span>Total</span>
-              <strong class="price">₹1,497</strong>
-            </div>
-
-            <button class="btn btn-checkout">
-              Proceed to Checkout
-            </button>
-          </div>
-        </div>
-
+    <!-- IMAGE -->
+    <div class="col-lg-6">
+      <div class="product-img">
+        <img src="./image/menu/brazilian-dark-roast-beans.webp" alt="Americano Coffee">
       </div>
     </div>
-  </section>
 
+    <!-- INFO -->
+    <div class="col-lg-6">
+      <h2>Americano Roasted Coffee</h2>
+      <p class="text-muted mt-2">
+        Smooth espresso diluted with hot water for a rich yet balanced taste.
+      </p>
+
+      <div class="mb-3">
+        <span class="price">$19.99</span>
+        <span class="old-price">$29.99</span>
+      </div>
+
+      <ul class="feature">
+        <li>✔ 100% Arabica Beans</li>
+        <li>✔ Medium Dark Roast</li>
+        <li>✔ Freshly Packed</li>
+        <li>✔ Rich Aroma & Smooth Finish</li>
+      </ul>
+
+      <div class="d-flex align-items-center gap-3 mt-4">
+        <input type="number" value="1" min="1" class="form-control w-25">
+        <button class="btn-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- TABS -->
+    <div class="col-12 mt-5">
+      <ul class="nav nav-pills gap-2">
+        <li class="nav-item">
+          <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#desc">Description</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#benefits">Benefits</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#reviews">Reviews</button>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="desc">
+          <p>
+            Our Americano is crafted using premium espresso beans,
+            brewed to perfection and balanced with hot water for
+            a smooth yet bold flavor.
+          </p>
+        </div>
+
+        <div class="tab-pane fade" id="benefits">
+          <ul>
+            <li>Boosts focus and energy</li>
+            <li>Low calorie coffee</li>
+            <li>Rich antioxidants</li>
+          </ul>
+        </div>
+
+        <div class="tab-pane fade" id="reviews">
+          <p>⭐⭐⭐⭐⭐ 4.8/5 based on 128 reviews</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
   <!-- FOOTER -->
   <footer class="coffee-footer">
     <!-- Main Footer -->
@@ -224,15 +218,11 @@
     <div class="footer-bottom">© 2026 Alessis Lab. All rights reserved.</div>
   </footer>
 
-  <script>
-    function changeQty(btn, change) {
-      const input = btn.parentElement.querySelector('input');
-      let value = parseInt(input.value);
-      value = Math.max(1, value + change);
-      input.value = value;
-    }
-  </script>
+
+<!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
 
 </body>
-
 </html>

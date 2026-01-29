@@ -1,0 +1,84 @@
+:root{
+  --primary:#0f3d2e;
+  --secondary:#1fa37a;
+  --light:#f4fbf8;
+}
+
+/* PAGE */
+.login-page{
+  min-height:100vh;
+  background:linear-gradient(135deg, var(--primary), var(--secondary));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+/* CARD */
+.login-card{
+  background:#fff;
+  border-radius:26px;
+  overflow:hidden;
+  box-shadow:0 30px 80px rgba(0,0,0,.25);
+  max-width:980px;
+  width:100%;
+}
+
+/* LEFT */
+.login-left{
+  background:linear-gradient(rgba(15,61,46,.9),rgba(15,61,46,.9)),
+  url("./image/login-bg.jpg") center/cover no-repeat;
+  color:#fff;
+  padding:60px 50px;
+}
+
+/* RIGHT */
+.login-right{
+  padding:60px 50px;
+}
+
+/* INPUT */
+.form-control{
+  height:52px;
+  border-radius:14px;
+  border:1px solid #ddd;
+}
+.form-control:focus{
+  border-color:var(--secondary);
+  box-shadow:none;
+}
+
+/* PASSWORD FIELD */
+.password-wrapper{
+  position:relative;
+}
+.toggle-password{
+  position:absolute;
+  right:16px;
+  top:50%;
+  transform:translateY(-50%);
+  cursor:pointer;
+  font-size:18px;
+  color:#777;
+}
+.toggle-password:hover{
+  color:var(--secondary);
+}
+
+/* BUTTON */
+.btn-login{
+  background:var(--secondary);
+  color:#fff;
+  height:52px;
+  border-radius:30px;
+  font-weight:600;
+  border:none;
+}
+.btn-login:hover{
+  background:var(--primary);
+   color: white !important;
+}
+
+@media(max-width:991px){
+  .login-left{display:none;}
+}
