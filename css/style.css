@@ -2402,6 +2402,7 @@ body {
 
 .footer-main ul li {
   margin-bottom: 10px;
+  margin-left: 15px;
   font-size: 14px;
   color: #000000;
   cursor: pointer;
@@ -2443,6 +2444,7 @@ body {
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
+
   .newsletter-section {
     transform: translateY(0);
   }
