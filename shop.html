@@ -1,231 +1,328 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Kavoon&display=swap"
-        rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Kavoon&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/shop.css">
-</head>
+    <link rel="stylesheet" href="./css/shop.css" />
+  </head>
 
-<body>
-  <!-- ================= NAVBAR ================= -->
-  <nav class="navbar navbar-expand-lg coffee-navbar">
-    <div class="container">
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg coffee-navbar">
+      <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./image/logo.png"
+            class="coffee-logo"
+            alt="Alessilabs Logo"
+          />
+        </a>
 
-      <!-- LOGO -->
-      <a class="navbar-brand" href="./index.html">
-        <img src="./image/logo.png" class="coffee-logo" alt="Alessilabs Logo" />
-      </a>
+        <!-- TOGGLER -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#coffeeNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- TOGGLER -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#coffeeNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- MENU -->
+        <div class="collapse navbar-collapse" id="coffeeNav">
+          <ul class="navbar-nav mx-auto gap-lg-4 text-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./our-story.html">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./recipes.html">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
 
-      <!-- MENU -->
-      <div class="collapse navbar-collapse" id="coffeeNav">
-        <ul class="navbar-nav mx-auto gap-lg-4 text-center">
-          <li class="nav-item">
-            <a class="nav-link active" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./menu.html">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./shop.html">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./our-story.html">Our Story</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./recipes.html">Recipes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
-          </li>
-        </ul>
-
-        <!-- ICONS -->
-        <div class="nav-icons d-flex align-items-center justify-content-center gap-3">
-          <a href="./cart.html" class="icon-btn">
-            <i class="bi bi-cart3"></i>
-          </a>
-          <a href="./account.html" class="icon-btn">
-            <i class="bi bi-person"></i>
-          </a>
+          <!-- ICONS -->
+          <div
+            class="nav-icons d-flex align-items-center justify-content-center gap-3"
+          >
+            <a href="./cart.html" class="icon-btn">
+              <i class="bi bi-cart3"></i>
+            </a>
+            <a href="./account.html" class="icon-btn">
+              <i class="bi bi-person"></i>
+            </a>
+          </div>
         </div>
       </div>
-
-    </div>
-  </nav>
+    </nav>
     <!-- ================= SHOP HERO ================= -->
     <section class="al-shop-hero">
-        <!-- BACKGROUND IMAGE -->
-        <div class="al-shop-bg">
-            <img src="./image/shop-hero-bg.png" alt="Shop Alessilabs Coffee" />
-        </div>
+      <!-- BACKGROUND IMAGE -->
+      <div class="al-shop-bg">
+        <img src="./image/shop-hero-bg.png" alt="Shop Alessilabs Coffee" />
+      </div>
 
-        <!-- OVERLAY -->
-        <div class="al-shop-overlay"></div>
+      <!-- OVERLAY -->
+      <div class="al-shop-overlay"></div>
 
-        <!-- CONTENT -->
-        <div class="al-shop-content">
-            <h1>SHOP</h1>
-        </div>
+      <!-- CONTENT -->
+      <div class="al-shop-content">
+        <h1>SHOP</h1>
+      </div>
 
-        <!-- CURVE SHAPE -->
-        <div class="al-shop-wave">
-            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-                <path d="M0,60 C240,120 480,120 720,90 960,60 1200,40 1440,60 L1440,120 L0,120 Z" fill="#f3fbf8"></path>
-            </svg>
-        </div>
+      <!-- CURVE SHAPE -->
+      <div class="al-shop-wave">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path
+            d="M0,60 C240,120 480,120 720,90 960,60 1200,40 1440,60 L1440,120 L0,120 Z"
+            fill="#f3fbf8"
+          ></path>
+        </svg>
+      </div>
     </section>
     <!-- ================= END SHOP HERO ================= -->
 
     <!-- shop -->
     <section class="al-shop">
-        <div class="container">
-            <div class="shop-layout">
-
-                <!-- SIDEBAR -->
-                <aside class="shop-sidebar">
-                   
-
-                    <!-- CATEGORY -->
-                    <div class="filter-group">
-                        <h6>CATEGORY</h6>
-                        <label><input type="checkbox" value="creamers" class="filter-category"> Creamers &
-                            Coffee</label>
-                        <label><input type="checkbox" value="mixes" class="filter-category"> Drink Mixes &
-                            Blends</label>
-                        <label><input type="checkbox" value="snacks" class="filter-category"> Snacks & Food</label>
-                        <label><input type="checkbox" value="variety" class="filter-category"> Variety Packs</label>
-                        <label><input type="checkbox" value="merch" class="filter-category"> Accessories & Merch</label>
-                    </div>
-
-                    <!-- DIET -->
-                    <div class="filter-group">
-                        <h6>SHOP BY DIET</h6>
-                        <label><input type="checkbox" value="vegan" class="filter-diet"> Vegan</label>
-                        <label><input type="checkbox" value="dairyfree" class="filter-diet"> Dairy-Free</label>
-                        <label><input type="checkbox" value="glutenfree" class="filter-diet"> Gluten-Free</label>
-                    </div>
-                </aside>
-
-                <!-- PRODUCTS -->
-                <div class="shop-products">
-
-                    <!-- TOP BAR -->
-                    <div class="shop-topbar">
-                        <p>Showing <strong id="count">0</strong> of <strong id="total">0</strong> products</p>
-
-                        <select id="sort">
-                            <option value="best">Best Selling</option>
-                            <option value="low">Price: Low to High</option>
-                            <option value="high">Price: High to Low</option>
-                        </select>
-                    </div>
-
-                    <!-- GRID -->
-                    <div class="product-grid" id="productGrid"></div>
-
-                </div>
+      <div class="container">
+        <div class="shop-layout">
+          <!-- SIDEBAR -->
+          <aside class="shop-sidebar">
+            <!-- CATEGORY -->
+            <div class="filter-group">
+              <h6>CATEGORY</h6>
+              <label
+                ><input
+                  type="checkbox"
+                  value="creamers"
+                  class="filter-category"
+                />
+                Creamers & Coffee</label
+              >
+              <label
+                ><input type="checkbox" value="mixes" class="filter-category" />
+                Drink Mixes & Blends</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  value="snacks"
+                  class="filter-category"
+                />
+                Snacks & Food</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  value="variety"
+                  class="filter-category"
+                />
+                Variety Packs</label
+              >
+              <label
+                ><input type="checkbox" value="merch" class="filter-category" />
+                Accessories & Merch</label
+              >
             </div>
+
+            <!-- DIET -->
+            <div class="filter-group">
+              <h6>SHOP BY DIET</h6>
+              <label
+                ><input type="checkbox" value="vegan" class="filter-diet" />
+                Vegan</label
+              >
+              <label
+                ><input type="checkbox" value="dairyfree" class="filter-diet" />
+                Dairy-Free</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  value="glutenfree"
+                  class="filter-diet"
+                />
+                Gluten-Free</label
+              >
+            </div>
+          </aside>
+
+          <!-- PRODUCTS -->
+          <div class="shop-products">
+            <!-- TOP BAR -->
+            <div class="shop-topbar">
+              <p>
+                Showing <strong id="count">0</strong> of
+                <strong id="total">0</strong> products
+              </p>
+
+              <select id="sort">
+                <option value="best">Best Selling</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+              </select>
+            </div>
+
+            <!-- GRID -->
+            <div class="product-grid" id="productGrid"></div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="coffee-footer">
-        <!-- Main Footer -->
-        <div class="footer-main">
-            <div class="container">
-                <div class="row gy-4">
-                    <!-- Logo & Text -->
-                    <div class="col-lg-4">
-                        <div class="footer-brand">
-                            <img src="./image/logo.png" alt="" />
-                            <p>
-                                A modern coffeehouse where creativity and craft come together.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Quick Links -->
-                    <div class="col-lg-2">
-                        <h5>Quick Links</h5>
-                        <ul>
-                            <li>Home</li>
-                            <li>About Us</li>
-                            <li>Gallery</li>
-                            <li>Stories / Impact</li>
-                            <li>Our Lab</li>
-                            <li>Contact Us</li>
-                        </ul>
-                    </div>
-
-                    <!-- Our Menu -->
-                    <div class="col-lg-3">
-                        <h5>Our Menu</h5>
-                        <ul>
-                            <li>Americano Rosted Coffee</li>
-                            <li>Italian Rosted Coffee</li>
-                            <li>Brazilan Rosted Coffee</li>
-                            <li>Mericano Cold Coffee</li>
-                            <li>Mericano Cold Coffee</li>
-                        </ul>
-                    </div>
-
-                    <!-- Contact -->
-                    <div class="col-lg-3">
-                        <h5>Contact Information</h5>
-                        <ul class="contact-list">
-                            <li><i class="bi bi-geo-alt-fill"></i> Malibu,USA</li>
-                            <li><i class="bi bi-envelope-fill"></i> malibu@gmail.com</li>
-                            <li><i class="bi bi-telephone-fill"></i> +123456789</li>
-                        </ul>
-                    </div>
-                </div>
+      <!-- Main Footer -->
+      <div class="footer-main">
+        <div class="container">
+          <div class="row gy-4">
+            <!-- Logo & Text -->
+            <div class="col-lg-4">
+              <div class="footer-brand">
+                <img src="./image/logo.png" alt="" />
+                <p>
+                  A modern coffeehouse where creativity and craft come together.
+                </p>
+              </div>
             </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-2">
+              <h5>Quick Links</h5>
+              <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Gallery</li>
+                <li>Stories / Impact</li>
+                <li>Our Lab</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+
+            <!-- Our Menu -->
+            <div class="col-lg-3">
+              <h5>Our Menu</h5>
+              <ul>
+                <li>Americano Rosted Coffee</li>
+                <li>Italian Rosted Coffee</li>
+                <li>Brazilan Rosted Coffee</li>
+                <li>Mericano Cold Coffee</li>
+                <li>Mericano Cold Coffee</li>
+              </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-lg-3">
+              <h5>Contact Information</h5>
+              <ul class="contact-list">
+                <li><i class="bi bi-geo-alt-fill"></i> Malibu,USA</li>
+                <li><i class="bi bi-envelope-fill"></i> malibu@gmail.com</li>
+                <li><i class="bi bi-telephone-fill"></i> +123456789</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Copyright -->
-        <div class="footer-bottom">© 2026 Alessis Lab. All rights reserved.</div>
+      <!-- Copyright -->
+      <div class="footer-bottom">© 2026 Alessis Lab. All rights reserved.</div>
     </footer>
-
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
     <script>
-        const products = [
-            { id: 1, name: "Superfood Creamer Original", price: 29.99, old: 39.99, category: "creamers", diet: ["vegan", "dairyfree"], rating: 5, best: true, img: "https://images.unsplash.com/photo-1509042239860-f550ce710b93" },
-            { id: 2, name: "Collagen Peptides Powder", price: 44.99, old: 54.99, category: "mixes", diet: ["glutenfree"], rating: 5, best: true, img: "https://images.unsplash.com/photo-1528825871115-3581a5387919" },
-            { id: 3, name: "Variety Pack Bundle", price: 79.99, old: 99.99, category: "variety", diet: ["vegan"], rating: 5, best: true, img: "https://images.unsplash.com/photo-1511920170033-f8396924c348" },
-            { id: 4, name: "Matcha Latte", price: 22.99, old: 29.99, category: "mixes", diet: ["vegan"], rating: 4, best: false, img: "https://images.unsplash.com/photo-1517705008128-361805f42e86" }
-        ];
+      const products = [
+        {
+          id: 1,
+          name: "Superfood Creamer Original",
+          price: 29.99,
+          old: 39.99,
+          category: "creamers",
+          diet: ["vegan", "dairyfree"],
+          rating: 5,
+          best: true,
+          img: "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
+        },
+        {
+          id: 2,
+          name: "Collagen Peptides Powder",
+          price: 44.99,
+          old: 54.99,
+          category: "mixes",
+          diet: ["glutenfree"],
+          rating: 5,
+          best: true,
+          img: "./image/product3.png",
+        },
+        {
+          id: 3,
+          name: "Variety Pack Bundle",
+          price: 79.99,
+          old: 99.99,
+          category: "variety",
+          diet: ["vegan"],
+          rating: 5,
+          best: true,
+          img: "https://images.unsplash.com/photo-1511920170033-f8396924c348",
+        },
+        {
+          id: 4,
+          name: "Matcha Latte",
+          price: 22.99,
+          old: 29.99,
+          category: "mixes",
+          diet: ["vegan"],
+          rating: 4,
+          best: false,
+          img: "./image/product4.avif",
+        },
+      ];
 
-        const grid = document.getElementById("productGrid");
-        const count = document.getElementById("count");
-        const total = document.getElementById("total");
-        total.innerText = products.length;
+      const grid = document.getElementById("productGrid");
+      const count = document.getElementById("count");
+      const total = document.getElementById("total");
+      total.innerText = products.length;
 
-        function render(list) {
-            grid.innerHTML = "";
-            list.forEach(p => {
-                grid.innerHTML += `
+      function render(list) {
+        grid.innerHTML = "";
+        list.forEach((p) => {
+          grid.innerHTML += `
       <div class="product-card">
         ${p.old ? `<span class="badge">-${Math.round((1 - p.price / p.old) * 100)}%</span>` : ""}
         ${p.best ? `<span class="badge secondary">Best Seller</span>` : ""}
@@ -238,32 +335,36 @@
         </div>
         <button class="add-btn">Add to Cart</button>
       </div>`;
-            });
-            count.innerText = list.length;
-        }
-
-        render(products);
-
-        /* FILTER LOGIC */
-        document.querySelectorAll("input, select").forEach(el => {
-            el.addEventListener("change", () => {
-                let cats = [...document.querySelectorAll(".filter-category:checked")].map(i => i.value);
-                let diets = [...document.querySelectorAll(".filter-diet:checked")].map(i => i.value);
-                let sort = document.getElementById("sort").value;
-
-                let filtered = products.filter(p => {
-                    return (cats.length ? cats.includes(p.category) : true) &&
-                        (diets.length ? diets.every(d => p.diet.includes(d)) : true);
-                });
-
-                if (sort === "low") filtered.sort((a, b) => a.price - b.price);
-                if (sort === "high") filtered.sort((a, b) => b.price - a.price);
-
-                render(filtered);
-            });
         });
+        count.innerText = list.length;
+      }
+
+      render(products);
+
+      /* FILTER LOGIC */
+      document.querySelectorAll("input, select").forEach((el) => {
+        el.addEventListener("change", () => {
+          let cats = [
+            ...document.querySelectorAll(".filter-category:checked"),
+          ].map((i) => i.value);
+          let diets = [
+            ...document.querySelectorAll(".filter-diet:checked"),
+          ].map((i) => i.value);
+          let sort = document.getElementById("sort").value;
+
+          let filtered = products.filter((p) => {
+            return (
+              (cats.length ? cats.includes(p.category) : true) &&
+              (diets.length ? diets.every((d) => p.diet.includes(d)) : true)
+            );
+          });
+
+          if (sort === "low") filtered.sort((a, b) => a.price - b.price);
+          if (sort === "high") filtered.sort((a, b) => b.price - a.price);
+
+          render(filtered);
+        });
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
