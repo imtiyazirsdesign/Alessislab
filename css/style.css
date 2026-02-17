@@ -2531,6 +2531,9 @@ body {
   color: #0b3d33;
   margin-bottom: 22px;
 }
+.al-story-overlay{
+  background: rgba(15, 127, 103, 0.219);
+}
 
 .al-story-content p {
   font-size: 15.5px;
@@ -2574,4 +2577,15 @@ body {
   .al-story-content h2 {
     font-size: 28px;
   }
+}
+.footer-credit {
+  color: #c8a96a; /* coffee-gold tone */
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-credit:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
